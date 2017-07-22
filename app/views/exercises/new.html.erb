@@ -1,7 +1,7 @@
 <div>
-  <h1>New exercise for "#{current_user.full_name}"</h1>
+  <h1>New exercise for <%= "#{current_user.full_name}" %></h1>
   <br />
     <%= render 'exercise_form' %>
-    <%= link_to "Back", user_exercises_path %>
+    <%= link_to "Back", root_path %>
   <br />
 </div>
