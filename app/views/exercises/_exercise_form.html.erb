@@ -1,0 +1,15 @@
+
+
+  <%= form_for ([current_user, @exercise]) do |f| %>
+    
+    <%= f.label :duration_in_min, 'Duration (min)' %>
+    <%= f.text_field :duration_in_min %>
+    <%= f.label :workout, 'Workout details' %>
+    <%= f.text_field :workout %>
+    <%= f.label :workout_date, 'Activity date' %>
+    <%= f.text_field :workout_date %>
+
+    <%= f.submit 'Create Exercise' %>
+
+  <% end %>
+
