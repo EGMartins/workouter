@@ -20,7 +20,7 @@ class ExercisesController < ApplicationController
       redirect_to [current_user, @exercise]
     else
       flash[:alert] = 'Exercise has not been created!'
-      redirect_to new
+      redirect_to new_user_exercise_path
     end
   end
 
